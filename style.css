@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid red;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+
+}
+ul {
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(216, 0, 0);
+    font-weight: bold;
+} 
+
+form{
+    text-align: center;
+    
+    border: 2px solid black;
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-evenly;
+    margin-top: 40px;
+    background-color: aquamarine;
+    align-items: center;
+}
+#submitForm{
+    background-color: bisque;
+    padding: 5px ;
+    border-radius: 10px;
+    cursor:pointer;
+}
+input{
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.results{
+    border:  3px solid red;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 30vw;
+    height: 30vh;
+    background-image: linear-gradient(rgb(175, 235, 255),rgb(255, 217, 0));
+}
+
+.err{
+    background-color: rgb(255, 161, 161);
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 30vw;
+    height: 10vh;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav ul li a:hover,nav ul li a:focus,nav ul li a:active
+{
+    text-decoration:underline ;
+} */
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+}
+nav ul :first-child{
+    color: #000000;
+}
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: px;
+    border-bottom: 2px solid #000000;
+    transition: all 0.2s linear;
+}
+
+nav ul li a:hover:before{
+width: 80%;
+}
